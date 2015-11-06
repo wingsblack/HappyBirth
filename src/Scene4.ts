@@ -98,9 +98,9 @@
        
 
         tmp = this.list[2];
-        tmp.x = 60;
+        tmp.x = 40;
         tmp.y = 300 + 10;
-        tmp.width = 247;
+        tmp.width = 260;
         tmp.alpha = 0;
         tmp.wait = 1500;
         tmp.lineSpacing = 14;
@@ -110,9 +110,9 @@
         } 
         
         tmp = this.list[5];
-        tmp.x =56;
+        tmp.x = 46;
         tmp.y = 622 + 10;
-        tmp.width = 220;
+   
 
         tmp.alpha = 0;
         tmp.wait = 2500;

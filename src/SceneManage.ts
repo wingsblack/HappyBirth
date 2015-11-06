@@ -57,7 +57,7 @@
         this.container.stage.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onTouchBegin, this);
         this.container.stage.addEventListener(egret.TouchEvent.TOUCH_MOVE, this.onTouchMove, this);
         this.container.stage.addEventListener(egret.TouchEvent.TOUCH_END, this.onTouchEnd, this);
-        //SceneManage.go(5, "left");
+        //SceneManage.go(4, "left");
     }
 
     private isDown: boolean = false;

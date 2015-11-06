@@ -78,6 +78,13 @@
         this.list.push(tmp);
 
         tmp = new egret.Bitmap(RES.getRes("sp_3.5_07"))
+        tmp.touchEnabled = true;
+        tmp.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
+            location.href = 'http://v.qq.com/page/e/d/z/e0170uie4dz.html';
+        }, tmp);
+        this.list.push(tmp);
+
+        tmp = new egret.Bitmap(RES.getRes("sp_3.shou"))
         this.list.push(tmp);
     }
 
@@ -251,7 +258,12 @@
         tmp.height = 50;
         tmp.alpha = 0;
 
-      
+        tmp = this.list[16];
+        tmp.x = 321;
+        tmp.y = 259;
+        tmp.width = 50;
+        tmp.height = 50;
+        tmp.alpha = 0;
     }
 
 
@@ -284,7 +296,14 @@
                 alpha: 1
             }, 1000).to({
                 alpha: 0
-            }, 1000).wait(1000);
+                }, 1000).wait(1000);
+
+            egret.Tween.get(_me.list[16], { loop: true })
+                .to({
+                    alpha: 1
+                }, 1000).to({
+                    alpha: 0
+                }, 1000).wait(1000);
 
         })
 

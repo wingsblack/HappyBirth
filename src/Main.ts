@@ -12,8 +12,6 @@ class Main extends egret.DisplayObjectContainer {
         this.addEventListener(egret.Event.ADDED_TO_STAGE, this.onAddedToStage, this);
         RES.loadGroup("reload", 2);
         RES.loadGroup("preload", 1);
-
-
     }
 
 
